@@ -73,6 +73,29 @@ table {
 /**
 Start
  */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/fonts/Roboto-Regular.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("/assets/fonts/Roboto-Bold.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("/assets/fonts/RobotoCondensed-Light.ttf") format("ttf");
+    font-display: swap;
+    font-weight: 200;
+}
+
+
 body {
     background-color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
