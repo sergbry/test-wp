@@ -3,10 +3,11 @@
 <div class="content-area">
 	<main id="main" class="site-main">
 
+    <div id="mobile-menu-main" class="mobile-menu active">
 
         <div class="mobile-menu-wrapper">
 
-            <div class="mobile-menu-toggler">
+            <div id="mobile_menu_close_toggler" class="mobile-menu-toggler">
                 <span class="toggler-line one"></span>
                 <span class="toggler-line two"></span>
             </div>
@@ -43,25 +44,25 @@
                 </div>
             </div>
 
-
         </div>
+    </div>
 </div>
 
 		<?php
-		if ( have_posts() ) {
+	if ( have_posts() ) {
 
-			// Load posts loop.
-			while ( have_posts() ) {
-				the_post();
-				the_content();
-			}
-
-		} else {
-
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
-
+		// Load posts loop.
+		while ( have_posts() ) {
+			the_post();
+			the_content();
 		}
+
+	} else {
+
+		// If no content, include the "No posts found" template.
+		get_template_part( 'template-parts/content/content', 'none' );
+
+	}
 		?>
 
 	</main><!-- .site-main -->

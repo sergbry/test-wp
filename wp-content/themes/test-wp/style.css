@@ -139,6 +139,14 @@ MOBILE MENU START
     background: linear-gradient(to right, #2c7bcd 0%, #003c8c 100%);
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    transition: left .5s ease-in-out;
+}
+.mobile-menu.active {
+    left: 0;
 }
 
 
