@@ -267,6 +267,32 @@ MOBILE MENU START
     border-color: #fff transparent transparent transparent;
 }
 
+.mobile-menu li.menu-item-has-children>ul {
+    padding-top: 0;
+    transition: padding .3s ease-in-out;
+}
+
+.mobile-menu li.menu-item-has-children.active>ul {
+    padding: 10px;
+}
+
+.mobile-menu li.menu-item-has-children>ul>li {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .3s ease-in-out,
+                padding .3s ease-in-out,
+                opacity .3s ease-in-out;
+    padding: 0 10px;
+    border-bottom: none;
+}
+
+.mobile-menu li.menu-item-has-children.active>ul>li {
+    max-height: 32px;
+    padding: 10px;
+    opacity: 1;
+}
+
 .mobile-menu li.active>ul.sub-menu li {
     /*margin-left: 20px;*/
 }
