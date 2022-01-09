@@ -140,6 +140,7 @@ COLORS START
 .color-accent {
     color: #010819;
 }
+
 /**
 COLORS END
  */
@@ -153,6 +154,31 @@ CONTAINER START
 }
 /**
 CONTAINER END
+ */
+
+/**
+FORMS START
+ */
+
+input {
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="text"],
+input.search-field {
+    background-color: rgba(100,100,100,.3);
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    background-color: #42a6fc;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/**
+FORMS END
  */
 
 /**
@@ -184,12 +210,28 @@ HEADER START
     margin-right: auto;
 }
 
-.header-bar .header-search {
+.header-search {
+    margin-left: 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
 }
 
-    /**
-    HEADER END
-     */
+.header-search input {
+    height: 37px;
+}
+
+.header-search input[type="submit"] {
+    margin-left: 5px;
+}
+
+.header-search input[type="search"] {
+    max-width: 150px;
+}
+
+/**
+HEADER END
+ */
 
 
 /**
@@ -207,7 +249,7 @@ MOBILE MENU START
     left: -100%;
     top: 0;
     z-index: 100;
-    transition: left .5s ease-in-out;
+    transition: left .3s ease-in-out;
 }
 .mobile-menu.active {
     left: 0;
@@ -373,3 +415,12 @@ MOBILE MENU START
 /**
 MOBILE MENU END
  */
+
+
+
+/**
+WP OVERRIDE
+ */
+.wp-block-social-links .wp-social-link.wp-social-link.wp-social-link {
+    margin: 4px 0 4px 8px;
+}
