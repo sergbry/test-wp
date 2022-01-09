@@ -71,9 +71,12 @@ table {
 
 
 /**
-Start
+THEME START
  */
 
+/**
+FONTS START
+ */
 @font-face {
     font-family: 'Roboto';
     src: local('Roboto'), local('Roboto-Regular'),
@@ -106,6 +109,9 @@ Start
     font-style: normal;
     font-display: swap;
 }
+/**
+FONTS END
+ */
 
 
 body {
@@ -137,6 +143,17 @@ COLORS START
 
 /**
 COLORS END
+ */
+
+/**
+HEADER START
+ */
+.header-top {
+    background-color: #2a2a2a;
+    height: 70px;
+}
+/**
+HEADER END
  */
 
 

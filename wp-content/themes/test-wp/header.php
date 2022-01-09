@@ -10,7 +10,11 @@
 <div id="page" class="site">
 
 		<header>
-            header content
+            <div class="header-top">
+                <div class="socials container">
+
+                </div>
+            </div>
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
