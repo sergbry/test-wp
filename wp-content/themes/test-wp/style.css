@@ -140,9 +140,19 @@ COLORS START
 .color-accent {
     color: #010819;
 }
-
 /**
 COLORS END
+ */
+
+/**
+CONTAINER START
+ */
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+/**
+CONTAINER END
  */
 
 /**
@@ -150,8 +160,15 @@ HEADER START
  */
 .header-top {
     background-color: #2a2a2a;
+}
+
+.socials ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     height: 70px;
 }
+
 /**
 HEADER END
  */

@@ -12,7 +12,9 @@
 		<header>
             <div class="header-top">
                 <div class="socials container">
-
+                    <div id="header_top" class="sidebar">
+		                <?php dynamic_sidebar( 'header_top_widgets' ); ?>
+                    </div>
                 </div>
             </div>
 		</header><!-- #masthead -->
