@@ -24,8 +24,9 @@ function twp_scripts() {
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri().'/assets/js/main.js', array(), $twp_version );
 }
 
-add_action( 'after_setup_theme', 'twp_register_nav_menu' );
-function twp_register_nav_menu() {
-	register_nav_menu( 'main', 'Main Menu' );
+/**
+ * include theme files
+ */
+foreach (glob(get_template_directory() . "/inc/*.php") as $filename) {
+	include_once $filename;
 }
-
