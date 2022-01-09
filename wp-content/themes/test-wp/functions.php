@@ -13,7 +13,6 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 add_action( 'wp_print_styles', 'twp_styles' );
-
 function twp_styles() {
 	global $twp_version;
 	wp_enqueue_style( 'main', get_stylesheet_uri(), array(), $twp_version );
@@ -23,5 +22,10 @@ add_action ( 'wp_print_scripts', 'twp_scripts' );
 function twp_scripts() {
 	global $twp_version;
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri().'/assets/js/main.js', array(), $twp_version );
+}
+
+add_action( 'after_setup_theme', 'twp_register_nav_menu' );
+function twp_register_nav_menu() {
+	register_nav_menu( 'main', 'Main Menu' );
 }
 
